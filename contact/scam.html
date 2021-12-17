@@ -1,0 +1,107 @@
+<!doctype html>
+<html><!--  htmlでここから記述する -->
+
+	<head><!--  コンピューターが見る内容を記述 -->
+		<meta charset="UTF-8">
+
+		<title>
+			詐欺犯罪｜お問合せページ
+		</title>
+
+		<link rel="stylesheet" href="../css/style.css">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+
+	<body><!--  人間が見る内容を記述 -->
+
+		<header><!--  header: メニューやロゴなどが入るところ -->
+		
+			<ul><!--  ul: リストを作るタグ　メニューなどでも使う -->
+		
+				<li><a href="../scam.html">タイトル</a></li><!--  li: ulの中の各項目を示す　項目ごとに記述 -->
+				<li><a href="../sagi/sagi.html">ネット犯罪体験</a></li>
+				<li><a href="../movie/movie.html">ゲーム体験</a></li>
+				<li><a href="scam.html">お問い合せ</a></li>
+		
+			</ul>
+		
+		</header>
+
+		<div class="wrapper">
+			
+			<main><!--  main: 各ページの内容　コンテンツが入るところ -->
+		
+				<div class="text-home">
+				お問い合せ
+				</div><br><br>
+
+				<form method="GET" action="../scam.html">
+
+					<div class="contact">
+						お問い合せの種類<br>
+						<select id="kind" name="kind">
+						<option value="質問">質問</option>
+						<option value="要望">要望</option>
+						<option value="不具合の報告">不具合の報告</option>
+						<option value="その他のお問い合わせ">その他のお問い合わせ</option>
+						</select>
+
+					</div>
+
+					<div class="contact">
+							緊急要件でしょうか？<br>
+							<input type="radio" name="emergency" value="いいえ" checked>はい
+							<input type="radio" name="emergency" value="いいえ" checked>いいえ
+					</div>
+						
+					<div class="contact">
+						連絡方法は？<br>
+
+						<label>
+							<input type="checkbox" name="how" value="メール">メール
+						</label>
+
+						<label>
+							<input type="checkbox" name="how" value="電話">電話
+						</label>
+					</div>
+
+					<div class="contact">
+						メールアドレスと電話番号を記入してください<br>
+						<label>
+							<input type="text" name="mailortel" value="メールアドレスか電話番号">
+						</label>			
+					</div>
+
+					<div class="contact">					
+						お問い合せの具体的な内容<br>
+						<label>
+						<textarea name="message"></textarea>		
+						</label>
+					</div>
+
+					<div class="contact">
+						<label>
+							<input type="submit"  name="submit"  value="送信">
+						</label>
+					</div>
+
+				</form>
+
+			</main>
+
+			<footer><!--  footer: ホームに戻るボタンやコピーライトが入るところ -->
+
+			</footer>
+
+		</div>
+
+		<br><br>
+
+		<p>←<a href="../scam.html">タイトルページに戻る</a></p>
+
+	</body>
+
+</html>

@@ -1,0 +1,426 @@
+@charset "utf-8";
+
+/* コメントアウト */
+
+/* 分からなくなった時に適用 */
+/*{
+  outline: 1px solid red;
+} 
+*/
+
+/*スクロールバー消し,スクショ用*/
+/*
+body::-webkit-scrollbar {
+	display:none;
+}
+*/
+
+
+/* htmlタグ内のボックスモデルを『レスポンシブデザイン』に対応させるため変更*/
+html{
+	box-sizing: border-box;
+}
+
+body{
+       /* background-color: #000; */
+	/*background-image: url("../images/kari.jpg");/* 背景画像指定 */
+	background-size: cover; /* 全画面に背景画像 */
+	background-attachment: fixed; /* 背景画像固定 */
+	background-position: center center; /* 背景画像縦横中央表示 */
+	margin:0px;/*ページの端の隙間を無くす。*/
+}
+
+.wrapper{
+	max-width: 1200px;
+	margin: 0 auto 0 auto;/*上下0px　左右は自動で同じ幅*/
+}
+
+/* タイトルページの内容 */
+.net{ 
+	border: solid 3px #9DDCFF;/*線*/
+	border-radius: 10px;/*角の丸み*/
+  box-shadow: 0 0 5px #9DDCFF,0 0 10px #9DDCFF;
+}
+
+.net p1{
+	font-size:28px;
+        color: #26bdbd;
+}
+
+.net p2{
+	font-size:20px;
+        color: rgb(0, 0, 0);
+}
+
+.text-title{
+	text-align:center;
+	font-size: 36px;
+	background-color:rgba(255, 255, 0, 0.623);
+	margin-top:0px;
+}
+
+.text-box{
+	width:1200px;
+	height:50px;
+	border:1px solid #9DDCFF;
+        box-shadow: 0 0 5px #9DDCFF,0 0 10px #9DDCFF;
+	font-size: 26px;
+	margin: 20px 0 0 0;
+	font-weight: bold;
+}
+
+.notice-box{
+	width:1200px;
+	height:150px;
+	border:1px solid #9DDCFF;
+        box-shadow: 0 0 5px #9DDCFF,0 0 10px #9DDCFF;
+	font-size: 16px;
+	margin: 20px 0 0 0;
+        color: rgb(0, 0, 0);
+}
+
+.text-home{
+	margin-top:30px;
+	line-height: 0;
+	font-weight: bold;
+	font-size: 26px;
+        color: rgb(0, 0, 0);
+}
+
+table.home{
+	border: 1px solid #9DDCFF;
+        box-shadow: 0 0 5px #9DDCFF,0 0 10px #9DDCFF;
+	height:120px;
+	width: 1200px;
+	text-align: left;
+	margin: 20px 0 0 0;
+}
+
+td.home{
+	border: 1px solid #9DDCFF;
+        box-shadow: 0 0 5px #9DDCFF,0 0 10px #9DDCFF;
+	margin: auto;
+	height:120px;
+	width: 1200px;
+	text-align: left;
+        color: rgb(0, 0, 0), 0.932
+}
+
+th.home{
+	border: 1px solid #9DDCFF;
+        box-shadow: 0 0 5px #9DDCFF,0 0 10px #9DDCFF;
+	margin: auto;
+	width: 1200px;
+	text-align: left;
+	height: auto;
+	font-size: 26px;
+}
+
+/* 動画ページの内容 */
+div.movie{
+	float: left;
+	padding-right: 20px;
+}
+
+/* ネット詐欺体験ページの内容 */
+.gazo-box {
+	position:relative;
+	top:30px;
+	border: 1px solid #9DDCFF;
+	box-shadow: 0 0 5px #9DDCFF,0 0 10px #9DDCFF;
+	border-radius: 10px;
+}
+
+.gazo-fish {
+	position:relative;
+	top:30px;
+
+	border-radius: 10px;
+}
+
+table.fish{
+	border: 1px solid #9DDCFF;
+ box-shadow: 0 0 5px #9DDCFF,0 0 10px #9DDCFF;
+	height:60px;
+	width: 1200px;
+	text-align: left;
+	font-size: 22px;
+	position: relative;
+	padding: 0px 0px 0px 15px;
+	margin: 30px 0 10px 0;
+}
+
+table.fish_taisaku{
+	border: 1px solid #464f53;
+ box-shadow: 0 0 5px #464f53,0 0 10px #464f53;
+	height:60px;
+	width: 1200px;
+	text-align: left;
+	font-size: 18px;
+	position: relative;
+	padding: 0px 0px 0px 15px;
+	margin: 30px 0 10px 0;
+}
+
+.fish_text{
+	font-size: 18px;
+	line-height:40px;
+}
+
+.logobox
+	{
+		border: solid 1px #808080;
+		width: 800px;
+		height: 400px;
+		padding: 0.5em;
+		overflow: auto;
+		margin: 0 auto;
+	}
+
+	.fishbox
+	{
+		border: solid 1px #808080;
+		width: 600px;
+		padding: 0.5em;
+		overflow: auto;
+		margin: 0 auto;
+	}
+label{
+	font-weight:bold;
+}
+
+a:hover.btn{
+	color: black;
+ text-shadow: 0 0 10px #8b7b7b,0 0 15px #8b7b7b;
+}
+
+.click{
+	cursor:pointer;
+}
+
+.jumbotron {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.container{
+	text-align: center
+}
+
+.kiyakubox{
+	border: solid 1px #808080;
+	width: 800px;
+	height: 400px;
+	padding: 0.5em;
+	overflow: auto;
+	margin: 0 auto;
+}
+
+h1.header{
+	text-align: center;
+}
+
+.fishcent{
+	margin-left: auto;
+	margin-right: auto;
+	width: 480px;
+	font-family:Verdana, Helvetica, sans-serif;
+}
+
+.fishcent  a{
+	border-bottom: 1.5px	dotted	#414C67;
+}
+
+h2.one{
+	margin:0;
+ padding:0;
+ border-radius: 10px;
+ border: 1px solid #9DDCFF;
+ box-shadow: 0 0 5px #9DDCFF,0 0 10px #9DDCFF;
+ font-weight:bold;
+}
+
+h2.text-center{
+	font-weight:bold;
+}
+
+.btn {
+	border-radius: 5px;
+	background-color: lightgray;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+  }
+
+.like{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-around;
+	text-align: center;
+}
+
+footer a{
+text-align: right;
+}
+
+ /*解説へのボタン*/
+ #page-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 77%;
+}
+#page-top a {
+	background: #666;
+	text-decoration: none;
+	color: #fff;
+	width: 100px;
+	padding: 30px 0;
+	text-align: center;
+	display: block;
+	border-radius: 5px;
+	font-size: 1.5rem;
+}
+#page-top a:hover {
+	text-decoration: none;
+	background: #999;
+}
+
+/* お問い合せページの内容 */
+.contact{
+	padding: 0 0 30px	0;
+}
+
+.contact label{
+	font-weight:normal;
+}
+
+select{
+	width: 30em;
+}
+
+input[name="mailortel"]{
+	width: 30em;
+}
+
+textarea{
+	width: 30em;
+	height: 6em;
+}
+
+input[type="submit"]{
+	margin: 20px 0;
+	width: 15em;
+}
+
+ul{
+	text-align: center;
+	border-bottom: 3px	dotted	#414C67;
+	margin-bottom:1px;
+}
+
+li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 0px	80px	0px;
+}
+
+h1{
+	font-size: 32px;
+	padding-top: 103px;
+	padding-bottom: 35px;
+	margin: 0px;
+	font-weight: 600;
+}
+
+h2{
+	font-size: 25px;
+	font-weight:400;
+}
+
+caption{
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* 初期の状態 */
+a:link{
+	color: 	#01FFFF;
+        /*text-shadow: 0 0 10px #01FFFF,0 0 15px #01FFFF;*/
+	text-decoration: none;
+}
+/* マウスが重なった状態 */
+a:hover{
+	color: #FF2079;
+        text-shadow: 0 0 10px #FF2079,0 0 15px #FF2079;
+	text-decoration: none;
+}　
+
+a:active{
+	color: #33414A;
+	text-decoration: none;
+}
+/* リンク先に訪問した後 */
+a:visited{
+	color: #555555;
+	text-decoration: none;
+}
+
+/* スマートフォン向けCSS *
+/* ウィンドウサイズが７６７ｐｘの時に{ }の中にスタイルを適応するタグ */
+@media (max-width: 767px) {
+
+	.wrapper{
+		margin: 0 15;	
+	}
+
+	/* ナビゲーションのメニューを縦並びに、読みやすいように背景に色を入れる*/
+
+	li{
+		display: block;
+		margin: 0 0 0 15px;
+	}
+
+	ul{
+		background-color: #D9E1DF;
+	}
+
+	/* カラムレイアウトも解除して、写真とテキスト内容が縦に並ぶようにする　合わせて写真とテキストが100％表示になるようにする
+	*/
+
+	table.home{
+		width: 100%;
+	}
+
+	.text-box{
+		width: 100%;
+	}
+
+	.notice-box{
+		width: 100%;
+		color: rgb(0, 0, 0);
+	}
+
+	/* フォームを画面サイズいっぱいまで広がるようにする
+	*/
+
+	select{
+		width: 100%;
+	}
+
+	textarea{
+		width: 100%;
+	}
+
+	input[name="mailortel"]{
+		width: 100%;
+	}
+
+	input[name="submit"]{
+		width: 100%;
+	}
+
+}
+
